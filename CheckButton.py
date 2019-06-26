@@ -1,9 +1,13 @@
 from tkinter import *
 root = Tk()
 
-v = IntVar
+GIRLS=['西施','貂蝉','王昭君','杨玉环']
 
-c = Checkbutton(root,text='测试一下',variable=v)
-c.pack()
+v=[]
+
+for girl in GIRLS:
+    v.append(IntVar())
+    b = Checkbutton(root,text=girl,variable = v[-1])
+    b.pack()
 
 mainloop()
