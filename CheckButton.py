@@ -11,7 +11,7 @@ v = IntVar()
 v.set(1)
 
 for lang,num in LANGS:
-    b = Radiobutton(root,text=lang,variable=v,value=num)
+    b = Radiobutton(root,text=lang,variable=v,value=num,indicatoron=False)
     b.pack(anchor=W)
 
 mainloop()
